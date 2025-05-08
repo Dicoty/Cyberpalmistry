@@ -14,7 +14,7 @@ from utils import split_data, train_one_epoch, evaluate
 from torch.utils.tensorboard import SummaryWriter
 
 def main():
-    root = r"C:\somefiles\handdataset"
+    root = r"" # 数据集根文件夹
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print("using {} device.".format(device))
     tb_writer = SummaryWriter(log_dir=r"runs/efficientnet_b7")
@@ -80,7 +80,7 @@ def main():
                                              collate_fn=val_dataset.collate_fn)
     
 
-    pre_weights = r"C:\somefiles\handdataset\efficientnetb7.pth"
+    pre_weights = r""
 
     if pre_weights:
         # 迁移学习

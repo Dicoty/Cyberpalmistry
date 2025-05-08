@@ -34,7 +34,7 @@ def main():
     
     model = creat_model(num_classes=2).to(device)
     class_indices = {'0': "no", '1': "yes"}
-    model.load_state_dict(torch.load(r"C:\somefiles\handdataset\Efficientnet_b3Net_26_acc_0.8.pth", weights_only=True))
+    model.load_state_dict(torch.load(r"", weights_only=True))
 
     with torch.no_grad():
         output = torch.squeeze(model(img.to(device))).cpu()

@@ -9,6 +9,10 @@ import torch.nn as nn
 from torch import Tensor
 from torch.nn import functional as F
 
+"""
+本来想用自己写的代码的，但是在训练过程中报错了，懒得找错误直接把现成的搬过来了
+https://github.com/WZMIAOMIAO/deep-learning-for-image-processing
+"""
 
 def _make_divisible(ch, divisor=8, min_ch=None):
     """
