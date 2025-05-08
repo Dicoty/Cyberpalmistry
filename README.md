@@ -26,25 +26,25 @@ Precision = (TP) / (TP+FN)
 
 我们获得的数据中，有伴侣:没伴侣 = 16:37
 
-![](../handdataset/confusion_matrix/confusion_matrix.png)
+![](./confusion_matrix/confusion_matrix.png)
 
 **EfficientnetB0:**
 最小损失：
-![最小损失](../handdataset/confusion_matrix/B0_loss.png "最小损失")
+![最小损失](./confusion_matrix/B0_loss.png "最小损失")
 最大准确率：
-![最大准确率](../handdataset/confusion_matrix/B0_acc.png "最大准确率")
+![最大准确率](./confusion_matrix/B0_acc.png "最大准确率")
 
 **EfficientnetB3:**
 最小损失：
-![最小损失](../handdataset/confusion_matrix/B3_loss.png "最小损失")
+![最小损失](./confusion_matrix/B3_loss.png "最小损失")
 最大准确率：
-![最大准确率](../handdataset/confusion_matrix/B3_acc.png "最大准确率")
+![最大准确率](./confusion_matrix/B3_acc.png "最大准确率")
 
 **EfficientnetB7:**
 最小损失：
-![最小损失](../handdataset/confusion_matrix/B7_loss.png "最小损失")
+![最小损失](./confusion_matrix/B7_loss.png "最小损失")
 最大准确率：
-![最大准确率](../handdataset/confusion_matrix/B7_acc.png "最大准确率")
+![最大准确率](./confusion_matrix/B7_acc.png "最大准确率")
 
 可见更大的模型表现还是要比较小的模型好的，不过B7和B3在这里差距不大，可能是因为已经过拟合了，B3因为模型更小所以在50轮里可以训练得更完全。至于为什么三个模型在50轮里训练过程中的最大准确率都是0.8，大概只是因为训练过程中我只拿了10张图片出来做验证，三个模型在50轮里都能碰到答对8个的时候吧。
 
